@@ -1,2 +1,4 @@
-# makali
-Decide what to do today.
+# Makali
+
+Post what you have done
+Decide what you want to do
