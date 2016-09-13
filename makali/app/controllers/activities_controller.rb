@@ -1,7 +1,9 @@
+
 class ActivitiesController < ApplicationController
 
   def index
     @activities = Activity.all
+    @activity = Activity.new
   end
 
   def show
@@ -9,13 +11,12 @@ class ActivitiesController < ApplicationController
   end
 
   def new
-    @activity = Activity.new
   end
 
   def create
     @activity = Activity.new(activity_params)
     @activity.save!
-    redirect_to @activity
+    redirect_to index
   end
 
   def edit

@@ -9,3 +9,11 @@
     <%= link_to '(edit)', edit_activity_path(activity) %>
   </li>
 <% end %>
+
+<%= form_for [@user, @activity] do |f| %>
+  <%= f.label :title%>
+  <%= f.text_field :title %>
+
+
+<%= f.submit %>
+<% end %>
