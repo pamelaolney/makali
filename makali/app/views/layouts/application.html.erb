@@ -10,6 +10,11 @@
 
   <body>
     <h1><%= link_to "Makali", activities_path %></h1>
+
+    <%= link_to 'SIGN UP', new_user_path %>
+    <%= link_to 'SIGN IN', new_session_path %>
+    <%= link_to 'SIGN OUT', session_path, method: :delete %>
+
     <%= yield %>
   </body>
 </html>
