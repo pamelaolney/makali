@@ -4,3 +4,8 @@
 
 <%= f.submit %>
 <% end %>
+
+<p><%= link_to '(delete)', activity_path(@activity),
+    method: :delete,
+    data: {confirm: "Are you sure?"} %>
+</p>

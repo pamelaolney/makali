@@ -28,6 +28,12 @@ class ActivitiesController < ApplicationController
     redirect_to @activity
   end
 
+  def destroy
+    @activity = Activity.find(params[:id])
+    @activity.destroy
+    redirect_to @activity
+  end
+
 
   private
 
