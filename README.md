@@ -3,6 +3,21 @@
 Post what you have done
 Decide what you want to do
 
+
+class CreateActivities < ActiveRecord::Migration[5.0]
+  def change
+    create_table :activities do |t|
+      t.string :title
+      t.references :user
+
+      t.timestamps
+    end
+  end
+end
+
+
+
+
 User.destroy_all
 Activity.destroy_all
 
