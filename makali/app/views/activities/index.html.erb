@@ -1,19 +1,23 @@
+<br>
+<div class="activities">
+
 <h2>Check out this list of things to do</h2>
 
 
-<%= link_to('(+) Add Activity', new_activity_path(@activity)) %>
+<%= form_for [@user, @activity] do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
 
+
+<%= f.submit :submit %>
+<% end %>
+
+
+<br>
 <% @activities.each do |activity| %>
-  <li>
+  <div class="activelist">
     <%= link_to activity.title, activity_path(activity) %>
     <%= link_to '(edit)', edit_activity_path(activity) %>
-  </li>
+  </div>
 <% end %>
-
-<%= form_for [@user, @activity] do |f| %>
-  <%= f.label :title%>
-  <%= f.text_field :title %>
-
-
-<%= f.submit %>
-<% end %>
+</div>

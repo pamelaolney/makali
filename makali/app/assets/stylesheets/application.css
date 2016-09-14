@@ -18,18 +18,23 @@
 }
 
  body{
-   background: blue;
+   background: rgb(0, 255, 204);
  }
 
 #header{
-  font-size: 50px;
-  margin-left: 30px;
+  font-size: 15px;
+  margin: 20px 20px 20px 90px;
   font-weight: bolder;
 }
 
 #header a{
   text-decoration: none;
   color: black;
+}
+
+#header a:hover{
+  border-bottom: 6px solid orange;
+  border-radius: 3px;
 }
 
 nav{
@@ -46,4 +51,66 @@ nav ul{
 nav ul li{
   list-style: none;
   display: inline-block;
+}
+
+.sign{
+  float: right;
+  margin: 20px 60px 20px 20px;
+}
+
+.sign a{
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.sign a:hover{
+  border-bottom: 6px solid orange;
+  border-radius: 3px;
+}
+
+.welcome{
+  margin: 10%;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+#live{
+  background: white;
+  border: 10px;
+  display: block;
+  margin: 0 20% 0 20%;
+}
+
+#live a{
+  text-decoration: none;
+  color: black;
+}
+
+#live:hover{
+  background: orange;
+}
+
+/* welcome page end */
+
+.activities{
+  border: .5px solid gray;
+  background: white;
+  padding: 5px;
+  max-width: 500px;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.activelist{
+  border: .3px solid gray;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.activelist a{
+  text-decoration: none;
+  color: black;
 }

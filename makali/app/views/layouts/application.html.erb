@@ -16,17 +16,27 @@
         <li>
           <h1 id="header"><%= link_to "Makali", activities_path %></h1>
         </li>
-        <li>
-          <%= link_to 'SIGN UP', new_user_path %>
-        </li>
-        <li>
+        <% if @current_user %>
+            <%= link_to "#{@current_user.username}", user_path(@current_user) %>
+            <li class="sign">
+              <%= link_to 'SIGN OUT', session_path, method: :delete %>
+            </li>
+        <% else %>
+            <li class="sign">
+              <%= link_to 'SIGN UP', new_user_path %>
+            </li>
+        <li class="sign">
           <%= link_to 'SIGN IN', new_session_path %>
         </li>
-        <li>
-          <%= link_to 'SIGN OUT', session_path, method: :delete %>
-        </li>
+        <% end %>
       </ul>
     </nav>
+    <br>
+    <% flash.each do |type, message| %>
+      <p class='<%= type %>'><%= message %></p>
+    <% end %>
+    <br>
+
 
     <%= yield %>
   </body>
