@@ -6,14 +6,27 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="icon" type="image/png" href="http://www.drodd.com/images14/m41.jpg" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
   </head>
 
   <body>
-    <h1><%= link_to "Makali", activities_path %></h1>
-
-    <%= link_to 'SIGN UP', new_user_path %>
-    <%= link_to 'SIGN IN', new_session_path %>
-    <%= link_to 'SIGN OUT', session_path, method: :delete %>
+    <nav>
+      <ul>
+        <li>
+          <h1 id="header"><%= link_to "Makali", activities_path %></h1>
+        </li>
+        <li>
+          <%= link_to 'SIGN UP', new_user_path %>
+        </li>
+        <li>
+          <%= link_to 'SIGN IN', new_session_path %>
+        </li>
+        <li>
+          <%= link_to 'SIGN OUT', session_path, method: :delete %>
+        </li>
+      </ul>
+    </nav>
 
     <%= yield %>
   </body>
