@@ -22,7 +22,7 @@ $(document).ready(function(){
 
   function handleClickEvent(){
     console.log("Ive been clicked");
-    $("#content").show();
+    $("#content").show()
   }
 
   })

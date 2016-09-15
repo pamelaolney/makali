@@ -1,16 +1,25 @@
 <h2 class="welcome">There's always something to do.</h2>
 
-<h2 class="welcome"id="live">
-  Live a little.
-</h2>
 
-<div id="makali">
-  <div id="content">
-    <% @activities.shuffle.first(1).each do |activity| %>
-    <%= activity.title %>
-    <% end %>
-  </div>
-</div>
+<ul class="generate">
+  <li>
+    <h2 id="live">
+      You should ...
+    </h2>
+
+  </li>
+  <li>
+    <div id="content">
+      <% @activities.shuffle.first(1).each do |activity| %>
+      <%= activity.title %>
+      <% end %>
+    </div>
+  </li>
+
+  <!-- <div id="makali">
+  </div> -->
+</ul>
+
 
 
 <h2 class="welcome" id="all">
