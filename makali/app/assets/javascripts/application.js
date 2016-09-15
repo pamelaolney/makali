@@ -11,9 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+//= require jquery.raty
+//= require jquery.raty.min
 //= require turbolinks
 //= require_tree .
+
 $(document).ready(function(){
   live = $("#live");
   $("#content").hide();
@@ -24,5 +28,7 @@ $(document).ready(function(){
     console.log("Ive been clicked");
     $("#content").show();
   }
+
+  $('.reviews').raty();
 
   })
