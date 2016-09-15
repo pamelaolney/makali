@@ -1,11 +1,18 @@
 <h2 class="welcome">There's always something to do.</h2>
 
-<h2 class="welcome" id="live">
-  <%= link_to 'Live a little.', activities_path  %>
+<h2 class="welcome"id="live">
+  Live a little.
 </h2>
 
 <div id="makali">
-  <% @activities.shuffle.first(1).each do |activity| %>
+  <div id="content">
+    <% @activities.shuffle.first(1).each do |activity| %>
     <%= activity.title %>
-  <% end %>
+    <% end %>
+  </div>
 </div>
+
+
+<h2 class="welcome" id="all">
+  <%= link_to 'View All Activities', activities_path  %>
+</h2>

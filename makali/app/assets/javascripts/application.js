@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  live = $("#live");
+  $("#content").hide();
+
+  live.on("click", handleClickEvent)
+
+  function handleClickEvent(){
+    console.log("Ive been clicked");
+    $("#content").show();
+  }
+
+  })
