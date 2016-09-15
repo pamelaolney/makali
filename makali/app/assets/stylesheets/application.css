@@ -144,3 +144,10 @@ nav ul li{
   text-decoration: none;
   color: black;
 }
+
+#edit a{
+  color: gray;
+  float: right;
+  font-size: 8px;
+  margin-top: -5px;
+}

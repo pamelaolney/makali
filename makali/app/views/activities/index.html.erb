@@ -16,9 +16,17 @@
 
 <br>
 <% @activities.each do |activity| %>
+  <% if @current_user %>
+    <div class="activelist">
+      <%= link_to activity.title, activity_path(activity) %>
+      <p id="edit">
+        <%= link_to '(edit)', edit_activity_path(activity) %>
+      </p>
+    </div>
+  <% else %>
   <div class="activelist">
     <%= link_to activity.title, activity_path(activity) %>
-    <%= link_to '(edit)', edit_activity_path(activity) %>
   </div>
+  <% end %>
 <% end %>
 </div>
