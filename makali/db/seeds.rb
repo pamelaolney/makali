@@ -9,24 +9,30 @@ Activity.destroy_all
 
 
   beach = Activity.create(
-    title: "Go to the beach"
+    title: "Go to the beach",
+    user_id: 1
       )
   diy = Activity.create(
-    title: "Crotchet 3 scarves and pass them out to the homeless"
+    title: "Crotchet 3 scarves and pass them out to the homeless",
+    user_id: 1
   )
 
 
   fight = Activity.create(
-    title: "Take a boxing course"
+    title: "Take a boxing course",
+    user_id: 1
   )
   spar = Activity.create(
-    title: "Go to a fighting meet-up and spar"
+    title: "Go to a fighting meet-up and spar",
+    user_id: 1
   )
 
 
   kpop = Activity.create(
-    title: "Try to sneak into Kpop invite only event"
+    title: "Try to sneak into Kpop invite only event",
+    user_id: 1
   )
   hair = Activity.create(
-    title: "Go to a popular korean salon and ask them to surprise you"
+    title: "Go to a popular korean salon and ask them to surprise you",
+    user_id: 1
   )
