@@ -104,9 +104,11 @@ nav ul li{
 
 
 #all{
-  background: white;
+  background: none;
   display: block;
   margin: 3% 20% 0 20%;
+  border-radius: 10px;
+  border: 4px solid black;
 }
 
 #all a{
