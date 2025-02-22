@@ -6,3 +6,6 @@ tmp/pids/*.pid
 
 # Ignore temporary cache files
 tmp/cache/
+
+# Ignore public assets
+public/assets/

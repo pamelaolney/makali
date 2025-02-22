@@ -105,7 +105,7 @@ GEM
     nio4r (2.7.4)
     nokogiri (1.13.10-x64-mingw32)
       racc (~> 1.4)
-    pg (0.21.0)
+    pg (1.5.9-x64-mingw32)
     puma (3.12.6)
     racc (1.8.1)
     rack (2.2.11)
@@ -201,7 +201,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   mimemagic!
-  pg (~> 0.18)
+  pg
   puma (~> 3.12)
   rails (= 5.2)
   rails_12factor
@@ -217,4 +217,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.4.22
+   2.2.3
