@@ -84,4 +84,4 @@ production:
   database: makali_production
   username: makali
   password: <%= ENV['MAKALI_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL']>
+  url: <%= ENV['DATABASE_URL'] %>
