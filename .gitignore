@@ -1,0 +1,8 @@
+# Ignore log files
+log/*.log
+
+# Ignore server PID files
+tmp/pids/*.pid
+
+# Ignore temporary cache files
+tmp/cache/
