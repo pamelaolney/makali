@@ -12,4 +12,3 @@ public/assets/
 
 # Ignore key
 config/master.key
-config/credentials.yml.enc
