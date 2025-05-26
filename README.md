@@ -1,8 +1,8 @@
 # Makali
 
 ## Live your life on the edge.
-Post what you have done.
-Decide what you want to do.
+Post activities you have done.
+Decide what activities you want to do.
 
 This application validates users so that they are only able to edit the objects that they create. Uses
 embedded ruby html pages for views.
@@ -26,3 +26,5 @@ Puma starting in single mode...
 * Environment: development
 * Listening on tcp://localhost:3000
 ```
+
+![Makali App Demo Image](app\assets\images\readme_demo.jpg "Website")
