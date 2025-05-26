@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2'
+gem 'rails', '7.1'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -52,4 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rails_12factor", group: :production
 
-ruby '2.6.6'
+ruby '3.1.3'
