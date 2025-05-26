@@ -1,0 +1,59 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies and run tests with Rake
+# For more information see: https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
+
+name: Ruby
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['2.6', '2.7', '3.0']
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Ruby
+    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
+    # change this to (see https://github.com/ruby/setup-ruby#versioning):
+    # uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Run tests
+      run: bundle exec rake
+
+            - name: Deploy to Render
+  # You may pin to the exact commit or the version.
+  # uses: JorgeLNJunior/render-deploy@9978fcd7ae237039fc3337c47ac2e1018d693df3
+  uses: JorgeLNJunior/render-deploy@v1.4.5
+  with:
+    # Render service id
+    service_id: 
+    # Render api key
+    api_key: 
+    # Clear build cache
+    clear_cache: # optional, default is false
+    # Wait until the deploy status is successful
+    wait_deploy: # optional, default is false
+    # Creates a github deployment
+    github_deployment: # optional, default is false
+    # Github auth token
+    github_token: 
+    # The name of the GitHub deployment enviroment
+    deployment_environment: # optional, default is production
+          
