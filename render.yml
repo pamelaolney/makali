@@ -1,6 +1,6 @@
 databases:
-  - name: makali
-    databaseName: makali-table
+  - name: makali-table
+    databaseName: makali_db
     user: makali_db_user
     plan: free
 
