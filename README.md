@@ -27,4 +27,4 @@ Puma starting in single mode...
 * Listening on tcp://localhost:3000
 ```
 
-![Makali App Demo Image](app\assets\images\readme_demo.jpg "Website")
+![Makali App Demo Image](app\assets\images\readme_demo.jpg)
