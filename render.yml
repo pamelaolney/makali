@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: mysite
+    name: makali
     runtime: ruby
     plan: free
     buildCommand: 'buildCommand: 'bundle install && yarn install --check-files'
